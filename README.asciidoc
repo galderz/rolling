@@ -1,4 +1,4 @@
-= Infinispan Rolling Upgrades Showcase
+== Infinispan Rolling Upgrades Showcase
 
 Shows off Infinispan Rolling Upgrades using two projects. The first project,
 called `rolling-source`, represents a source cluster with data on it. The
