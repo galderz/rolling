@@ -46,6 +46,11 @@
          <version>${infinispan-core.version}</version>
       </dependency>
       <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-cli-server</artifactId>
+         <version>${infinispan-core.version}</version>
+      </dependency>
+      <dependency>
          <groupId>junit</groupId>
          <artifactId>junit</artifactId>
       </dependency>

@@ -63,13 +63,12 @@ public class SourceCluster {
 
    static EmbeddedCacheManager createCacheManager(String cacheManagerName) {
       GlobalConfigurationBuilder globalBuilder = GlobalConfigurationBuilder.defaultClusteredBuilder();
-      globalBuilder
-            .globalJmxStatistics().cacheManagerName(cacheManagerName);
+      globalBuilder.globalJmxStatistics().cacheManagerName(cacheManagerName);
 
       ConfigurationBuilder builder = new ConfigurationBuilder();
       builder
-            .clustering().cacheMode(CacheMode.REPL_SYNC)
-            .jmxStatistics().enable();
+         .clustering().cacheMode(CacheMode.REPL_SYNC)
+         .jmxStatistics().enable();
 
       return TestCacheManagerFactory.createClusteredCacheManager(globalBuilder, builder);
    }
