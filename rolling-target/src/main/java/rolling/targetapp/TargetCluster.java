@@ -80,7 +80,7 @@ public class TargetCluster {
    private static Context connectCLInterface(String connectionString) throws Exception {
       Context ctx = new ContextImpl(new StreamIOAdapter(), new CommandBufferImpl());
       Connection connection = ConnectionFactory.getConnection(connectionString);
-      connection.connect(ctx, null);
+      connection.connect(null);
       ctx.setConnection(connection);
       return ctx;
    }
